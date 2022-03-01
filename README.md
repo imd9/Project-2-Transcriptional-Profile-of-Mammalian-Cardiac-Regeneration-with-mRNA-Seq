@@ -4,7 +4,11 @@ A brief description of what this repository is for and what it contains
 
 # Contributors
 
-List contributor names and github user names, or email addresses if desired
+Monica Roberts: Programmer (monicapr@bu.edu)
+
+Preshita Dave: Analyst (preshita@bu.edu)
+
+Italo Duran: Data curator (duran01@bu.edu)
 
 # Repository Contents
 
