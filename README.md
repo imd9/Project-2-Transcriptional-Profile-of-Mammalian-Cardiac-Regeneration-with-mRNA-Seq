@@ -1,4 +1,4 @@
-# Project Description
+# Project 2: Transcriptional Profile of Mammalian Cardiac Regeneration with mRNA-Seq
 
 A brief description of what this repository is for and what it contains
 
