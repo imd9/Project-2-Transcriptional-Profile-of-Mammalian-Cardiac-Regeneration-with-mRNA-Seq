@@ -1,0 +1,16 @@
+#!/bin/bash -l
+
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+module load sratoolkit
+vdb-config -i
+fastq-dump -I --split-files P0_1.sra
+
+echo "Job finished: $(date +%F)"
