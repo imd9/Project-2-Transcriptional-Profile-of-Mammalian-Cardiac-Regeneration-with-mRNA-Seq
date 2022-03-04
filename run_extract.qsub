@@ -5,6 +5,9 @@
 #$ -j y
 #$ -pe mpi_16_tasks_per_node 16
 
+#this code was extracted from the template given to us by the class,
+#we use this to convert and split the sra file into two fastq files.
+
 echo "Running job $JOB_ID"
 echo "Started: $(date +%F)"
 echo "Running in directory: $PWD"
