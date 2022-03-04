@@ -5,6 +5,8 @@
 #$ -j y
 #$ -pe mpi_16_tasks_per_node 16
 
+#this code was used to take the two fastq files previously made and convert them to fastqc and also get a report for quality metrics in html format.
+
 echo "Running job $JOB_ID"
 echo "Started: $(date +%F)"
 echo "Running in directory: $PWD"
