@@ -6,6 +6,8 @@
 #$ -pe mpi_16_tasks_per_node 16
 #$ -l h_rt=48:00:00
 
+#Written by Monica Roberts. Executes cuffdiff tool on accepted_hits.bam to identify differentially expressed genes.
+
 source /etc/bashrc
 module load cufflinks
 
