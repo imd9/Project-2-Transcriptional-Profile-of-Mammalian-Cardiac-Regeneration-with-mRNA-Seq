@@ -5,6 +5,8 @@
 #$ -j y
 #$ -pe mpi_16_tasks_per_node 16
 
+#Written by Monica Roberts. Executes cufflinks tool on accepted_hits.bam to count number of reads mapped to annotated genomic regions.
+
 echo "Running job $JOB_ID"
 echo "Started: $(date +%F)"
 echo "Running in directory: $PWD"
