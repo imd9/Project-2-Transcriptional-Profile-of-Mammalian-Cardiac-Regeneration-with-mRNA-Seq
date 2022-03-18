@@ -1,0 +1,17 @@
+#!/bin/bash -l
+
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+module unload anaconda3
+module load python3 samtools rseqc
+
+inner_distance.py -i accepted_hits.bam -r /project/bf528/project_2/reference/annot/mm9.bed -o inner_dist
+
+echo "Job finished: $(date +%F)"
