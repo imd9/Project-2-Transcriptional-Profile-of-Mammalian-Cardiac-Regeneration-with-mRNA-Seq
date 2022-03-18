@@ -31,6 +31,8 @@ P0_1/run_innerdistance.qsub: Written by Monica Roberts. Executes inner_distance.
 
 analyst.r: Written by Preshita Dave. Reproduces fig 1B which compares the postnatal and adult mice.
 
+run_extract.qsub: Written by Italo Duran. Takes sra file and converts it into two fastq files. 
+
 run_qc.qsub: Written by Italo Duran. Takes the two fastq files previously made and converts them to fastqc and creates a report for quality metrics in html format.
 
 
