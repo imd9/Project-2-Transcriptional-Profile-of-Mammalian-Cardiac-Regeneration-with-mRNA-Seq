@@ -1,0 +1,17 @@
+#!/bin/bash -l
+
+#$ -P bf528
+#$ -cwd
+#$ -j y
+#$ -pe mpi_16_tasks_per_node 16
+
+#this code was used to take the two fastq files previously made and convert them to fastqc and also get a report for quality metrics in html format.
+
+echo "Running job $JOB_ID"
+echo "Started: $(date +%F)"
+echo "Running in directory: $PWD"
+
+module load fastqc
+fastqc -f fastq -o /projectnb/bf528/users/swiss_cheese_2022/project_2/curator /projectnb/bf528/users/swiss_cheese_2022/project_2/curator/P0_1/P0_1_1.fastq /projectnb/bf528/users/swiss_cheese_2022/project_2/curator/P0_1/P0_1_2.fastq
+
+echo "Job finished: $(date +%F)"
