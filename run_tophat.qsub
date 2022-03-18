@@ -5,6 +5,8 @@
 #$ -j y
 #$ -pe mpi_16_tasks_per_node 16
 
+#Written by Monica Roberts. Execute tophat tool to perform alignment of RNA-seq reads to mouse reference genome.
+
 echo "Running job $JOB_ID"
 echo "Started: $(date +%F)"
 echo "Running in directory: $PWD"
